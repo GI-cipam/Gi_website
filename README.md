@@ -1,2 +1,2 @@
-# GI_web
-# The repository is to show all the Graphical Indications through website.
+# GI_website
+## The repository is the official Geographical Indications of India web portal repo.
