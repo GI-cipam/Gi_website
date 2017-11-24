@@ -2,6 +2,7 @@ var express=require('express');
 
 var home = require('./routes/home');
 var signin = require('./routes/sign_in');
+var signup=require('./routes/sign_up');
 
 //App setup
 var port = process.env.PORT || 4000;
@@ -12,6 +13,7 @@ var server=app.listen(port,function(){
 
 app.use('/', home);
 app.use('/signIn',signin);
+app.use('/signUp',signup);
 
 // serve static files
 app.use(express.static('public'));
