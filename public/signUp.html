@@ -8,10 +8,10 @@
         <link rel="icon" href="../../../../favicon.ico">
     
         <title>Sign Up</title>
-    
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <link rel="stylesheet" href="signUp.css">
 </head>
 <body>
@@ -35,6 +35,18 @@
     </div>
   </div>
 </form>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAeFB6v4sdJpdnvHM6xIIiJz4Us5XibKIA",
+    authDomain: "gi-website-36c02.firebaseapp.com",
+    databaseURL: "https://gi-website-36c02.firebaseio.com",
+    projectId: "gi-website-36c02",
+    storageBucket: "",
+    messagingSenderId: "1092547245593"
+  };
+  firebase.initializeApp(config);
 
+</script>
 </body>
 </html>
