@@ -16,13 +16,13 @@
 </head>
 <body>
 
-<form style="border:1px solid #ccc">
+    
   <div class="container">
     <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Email" name="email" required id="email">
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" required id="password">
 
     <label><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
@@ -31,10 +31,10 @@
 
     <div class="clearfix">
       <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="submit" class="signupbtn" onclick="signUp()">Sign Up</button>
     </div>
   </div>
-</form>
+
 <script>
   // Initialize Firebase
   var config = {
@@ -46,6 +46,18 @@
     messagingSenderId: "1092547245593"
   };
   firebase.initializeApp(config);
+
+  function signUp(){
+      var email=document.getElementById('email').value;
+      var password=document.getElementById('password').value;
+      firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  
+      var errorCode = error.code;
+      var errorMessage = error.message;
+  
+    });
+    console.log('signed up');
+  }
 
 </script>
 </body>
