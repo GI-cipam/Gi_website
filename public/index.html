@@ -16,7 +16,7 @@
             <link href="index.css" rel="stylesheet">
             <!-- jQuery library -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+            <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
             <!-- Latest compiled JavaScript -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   </head>
     </head>
@@ -44,8 +44,28 @@
                       </form>
                     </div>
                   </nav>
-       Hello 
        
+       <div>UserName: </div>
+       <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAeFB6v4sdJpdnvHM6xIIiJz4Us5XibKIA",
+          authDomain: "gi-website-36c02.firebaseapp.com",
+          databaseURL: "https://gi-website-36c02.firebaseio.com",
+          projectId: "gi-website-36c02",
+          storageBucket: "",
+          messagingSenderId: "1092547245593"
+        };
+        firebase.initializeApp(config);
+        
+        firebase.auth().onAuthStateChanged(user => {
+        if(user) {
+        console.log('signed in');
+        window.user = user;
+        console.log(user.email);
+        }
+        });
+       </script>
     </body>
 
 </html>
