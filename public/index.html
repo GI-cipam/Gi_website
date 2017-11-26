@@ -45,7 +45,7 @@
                     </div>
                   </nav>
        
-       <div>UserName: </div>
+       <div id="username">UserName: </div>
        <button id="logOut" onclick="log_out()">Log out</button>
        <script>
         // Initialize Firebase
@@ -58,11 +58,12 @@
           messagingSenderId: "1092547245593"
         };
         firebase.initializeApp(config);
-        
+        var div=document.getElementById('username');
         firebase.auth().onAuthStateChanged(user => {
         if(user) {
         console.log('signed in');
         window.user = user;
+        div.innerHTML+=user.email;  
         console.log(user.email);
         }
         });
