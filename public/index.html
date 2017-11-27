@@ -114,7 +114,9 @@
         function search(){
           var search_item=document.getElementById('search_item').value;
           console.log(search_item);
-            ref.child('gi_products').equalTo(search_item).on("value", function(snapshot) {
+          var firebaseRef = firebase.database().ref().child("gi_products");
+            firebaseRef.on('value', function(snapshot) {
+              console.log("retrieving data");
             console.log(snapshot.val());
             snapshot.forEach(function(data) {
             console.log(data.key);
