@@ -57,7 +57,15 @@ new google.maps.Geocoder().geocode({'latLng' : latlng}, function(results, status
 
 
 function email(){
-    window.user=user;
+    var email;
+    firebase.auth().onAuthStateChanged(user => {
+        if(user) {
+        console.log('signed in');
+        window.user = user;
+        email=user.email;}
+        else console.log('user not found');    
+    })
+
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -68,7 +76,7 @@ function email(){
       
       var mailOptions = {
         from: 'gi.cipam@gmail.com',
-        to: user.email,
+        to: email,
         subject: 'Sending Email using Node.js',
         text: 'That was easy!'
       };
