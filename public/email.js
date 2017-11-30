@@ -1,5 +1,17 @@
 var latlng;
-latlng = new google.maps.LatLng(40.730885, -73.997383); // New York, US
+var lat,lng;
+
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showLocation);
+} else {
+    console.log("Geolocation is not supported by this browser.");
+}
+
+function showLocation(position){
+lat=position.coords.latitude;  
+lng=position.coords.longitude; 
+
+latlng = new google.maps.LatLng(lat, lng); 
 
 new google.maps.Geocoder().geocode({'latLng' : latlng}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
@@ -41,4 +53,4 @@ new google.maps.Geocoder().geocode({'latLng' : latlng}, function(results, status
             console.log("City: " + city + ", City2: " + cityAlt + ", Country: " + country + ", Country Code: " + countryCode);
         }
     }
-});
+});}
