@@ -54,3 +54,32 @@ new google.maps.Geocoder().geocode({'latLng' : latlng}, function(results, status
         }
     }
 });}
+
+
+function email(){
+    window.user=user;
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: 'gi.cipam@gmail.com',
+          pass: 'cipam@123'
+        }
+      });
+      
+      var mailOptions = {
+        from: 'gi.cipam@gmail.com',
+        to: user.email,
+        subject: 'Sending Email using Node.js',
+        text: 'That was easy!'
+      };
+      
+      transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log('Email sent: ' + info.response);
+        }
+      });
+}
+
+email();
