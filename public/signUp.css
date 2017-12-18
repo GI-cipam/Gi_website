@@ -9,7 +9,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+.signupbtn {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -48,4 +48,9 @@ button {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
+}
+body{
+    background: #1c92d2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1c92d2, #f2fcfe);
 }
