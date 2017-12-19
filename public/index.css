@@ -116,3 +116,31 @@ body {
   background-color: steelblue;
   
 }
+
+#username{
+  margin-left:2%;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.button1{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.button2{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  background-color: rgb(243, 62, 62); /* Green */
+  color: white;
+}
+
