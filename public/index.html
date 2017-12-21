@@ -28,9 +28,10 @@
                 .mySlides {display:none}
                 .w3-left, .w3-right, .w3-badge {cursor:pointer}
                 .w3-badge {height:13px;width:13px;padding:0}
+				
                 </style>
                 
-    <body>
+    <body style="background: darkslategray !important;">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="background-color: #2d4d64">
                     <a class="navbar-brand" href="#"><i class="fa fa-globe fa-2x" aria-hidden="true"></i>Geographical Indications Of India</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +62,7 @@
                   <span id="username" style="color:rgb(255, 255, 255) ;padding-top:15px">UserName: </span>
                   <button class="btn btn-outline-link my-2 my-sm-0 button2" id="logOut" onclick="log_out()" style="float:right ; margin-right:2%">Log out</button>
                    </div> 
-                  <div  id="carouselExampleIndicators" class="carousel slide span12 container" data-ride="carousel" style="margin-top:1.5%; width:80%">
+                  <div  id="carouselExampleIndicators" class="carousel slide span12 container" data-ride="carousel" style="margin-top:1.5%; width:100%">
                     <div class="row">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -91,9 +92,56 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a> 
-                </div>     
-                  
-                <div class="card" style="width: 20rem; margin:40px 40px 40px 15%">
+                </div>
+				
+				
+				<span id="theading1" style="color:rgb(255, 255, 255) ;padding-top:15px; margin-left:2%; font-family: 'Philosopher', sans-serif; font-size: 30px; color: white;"></span>
+				
+				<div>
+				<div class="row" style="background: dimgrey; margin-left:20px; margin-right:20px;">
+				<div class="clsScroll" style="overflow-x: auto; overflow-y: hidden;">
+				<table>
+				<tr id="card_states">
+				</tr>
+				</table>
+				</div>
+				</div>
+				</div>
+				
+				<span id="theading2" style="color:rgb(255, 255, 255) ;padding-top:15px; margin-left:2%; font-family: 'Philosopher', sans-serif; font-size: 30px; color: white;"></span>
+				
+				<div>
+				<div class="row" style="margin-left:20px; margin-right:20px; background: dimgrey">
+				<div class="clsScroll" style="overflow-x: auto; overflow-y: hidden;">
+				<table>
+				<tr id="card_categories">
+				</tr>
+				</table>
+				</div>
+				</div>
+				</div>
+				
+				
+				<span id="username" style="color:rgb(255, 255, 255) ;padding-top:15px">POPULAR GI's </span>
+				
+				<div>
+				<div class="row" style="background: dimgrey; margin-left:20px; margin-right:20px;">
+				<div class="clsScroll" style="overflow-x: auto; overflow-y: hidden;">
+				<table>
+				<tr id="card_gi">
+				</tr>
+				</table>
+				</div>
+				</div>
+				</div>
+				
+				<div>
+				<div class="row" style="background: dimgrey; margin-left:20px; margin-right:20px;">
+				<div class="clsScroll" style="overflow-x: auto; overflow-y: hidden;">
+				<table>
+				<tr>
+				<td>
+                <div class="card" style="width: 20rem; margin-top:20px; margin-bottom:20px;">
                   <img class="card-img-top" style="height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Darjeeling-tea-first-flush-in-cup.jpg/1200px-Darjeeling-tea-first-flush-in-cup.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Darjeeling Tea</h4>
@@ -101,8 +149,9 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-        
-                <div class="card" style="width: 20rem; margin:40px">
+				</td>
+				<td>
+                <div class="card" style="width: 20rem; margin-top:20px; margin-bottom:20px;">
                   <img class="card-img-top" style="height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Aranmula_kannadi.jpg/330px-Aranmula_kannadi.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Aranmula kannadi</h4>
@@ -110,8 +159,29 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-                
-                <div class="card" style="width: 20rem;  margin:40px">
+				</td>
+				<td>
+				<div class="card" style="width: 20rem; margin-top:20px; margin-bottom:20px;">
+                  <img class="card-img-top" style="height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Aranmula_kannadi.jpg/330px-Aranmula_kannadi.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Aranmula kannadi</h4>
+                    <p class="card-text">Aranmula kannadi ( meaning the Aranmula mirror) is a handmade metal-alloy mirror, made in Aranmula, a small town in the state of Kerala, India.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+				</td>
+				<td>
+				<div class="card" style="width: 20rem; margin-top:20px; margin-bottom:20px;">
+                  <img class="card-img-top" style="height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Aranmula_kannadi.jpg/330px-Aranmula_kannadi.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Aranmula kannadi</h4>
+                    <p class="card-text">Aranmula kannadi ( meaning the Aranmula mirror) is a handmade metal-alloy mirror, made in Aranmula, a small town in the state of Kerala, India.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                </td>
+				<td>
+                <div class="card" style="width: 20rem; margin-top:20px; margin-bottom:20px;">
                   <img class="card-img-top" style="height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hermann_Linde_-_Girl_standing_in_a_veranda_wearing_a_Pochampalli_sari_%28ca.1895%29.jpg/330px-Hermann_Linde_-_Girl_standing_in_a_veranda_wearing_a_Pochampalli_sari_%28ca.1895%29.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Pochampalli Ikat </h4>
@@ -119,9 +189,33 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-                <div class="container">
-                  <button type="button" class="btn btn-primary btn-lg btn-block"><h1>View More</h1><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></button>
+				</td>
+				<td>
+                <div class="card" style="width: 20rem; margin-top:20px; margin-bottom:20px;">
+                  <img class="card-img-top" style="height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hermann_Linde_-_Girl_standing_in_a_veranda_wearing_a_Pochampalli_sari_%28ca.1895%29.jpg/330px-Hermann_Linde_-_Girl_standing_in_a_veranda_wearing_a_Pochampalli_sari_%28ca.1895%29.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Pochampalli Ikat </h4>
+                    <p class="card-text">Pochampally Saree or Pochampalli Ikat is a saree made in Bhoodan Pochampally, Yadadri Bhuvanagiri district, Telangana State, India. They have traditional geometric patterns in Ikat style of dyeing.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
+				</td>
+				<td>
+                <div class="card" style="width: 20rem; margin-top:20px; margin-bottom:20px;">
+                  <img class="card-img-top" style="height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hermann_Linde_-_Girl_standing_in_a_veranda_wearing_a_Pochampalli_sari_%28ca.1895%29.jpg/330px-Hermann_Linde_-_Girl_standing_in_a_veranda_wearing_a_Pochampalli_sari_%28ca.1895%29.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Pochampalli Ikat </h4>
+                    <p class="card-text">Pochampally Saree or Pochampalli Ikat is a saree made in Bhoodan Pochampally, Yadadri Bhuvanagiri district, Telangana State, India. They have traditional geometric patterns in Ikat style of dyeing.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+				</td>
+				</tr>
+				</table>
+				</div>
+				</div>
+				</div>
+			
       
        <script>
         // Initialize Firebase
@@ -147,12 +241,18 @@
         }
         });
         function log_out(){
-          firebase.auth().signOut().then(function() {
-            console.log('signed out');
-            // Sign-out successful.
-}, function(error) {
-  // An error happened.
+          
+		  firebase.auth().signOut().then(function() {
+              console.log('signed out');
+              // Sign-out successful.
+             var div=document.getElementById('username');
+             div.innerHTML+="Guest User"; 
+  }, function(error) {
+    // An error happened.
 });
+
+
+
         }
         function search(){
           var search_item=document.getElementById('search_item').value;
@@ -164,7 +264,80 @@
 
         }
        </script>
+	   <script>
+	   $(document).ready(function(){
+		var rootRef =firebase.database().ref().child("States");
+		rootRef.on("child_added",snap =>{
+	
+			var imgurl=snap.child("dpurl").val();
+			var sname=snap.child("name").val();
+	
+		$("#card_states").append(
+	
+		"<td><div class= 'card' style='width: 20rem; margin-top:20px; margin-bottom:20px;'><img class='card-img-top' style='height:200px' src="+imgurl+"><div class='card-body'><h4 class='card-title'>"+sname+"</h4></div></div></td>"
+	
+		);
+	
+		});
+	
+		$("#theading1").append("STATES");
+		});
+	   
+	  
+	   
+	   
+	   
+	   </script>
+	   <script>
+	   $(document).ready(function(){
+
+		var rootRef2 =firebase.database().ref().child("Categories");
+		rootRef2.on("child_added",snap =>{
+	
+			var imgurl=snap.child("dpurl").val();
+			var sname=snap.child("name").val();
+	
+		$("#card_categories").append(
+	
+		"<td><div class= 'card' style='width: 20rem; margin-top:20px; margin-bottom:20px;'><img class='card-img-top' style='height:200px' src="+imgurl+"><div class='card-body'><h4 class='card-title'>"+sname+"</h4></div></div></td>"
+	
+		);
+	
+		});
+		$("#theading2").append("CATEGORIES");
+		});
+	   
+	  
+	   
+	   
+	   
+	   </script>
+	   <script>
+	   $(document).ready(function(){
+
+		var rootRef3 =firebase.database().ref().child("Giproducts");
+		rootRef3.on("child_added",snap =>{
+	
+			var imgurl=snap.child("dpurl").val();
+			var sname=snap.child("name").val();
+			var des=snap.child("detail").val();
+	
+		$("#card_gi").append(
+	
+		"<td><div class= 'card' style='width: 20rem; margin-top:20px; margin-bottom:20px;'><img class='card-img-top' style='height:200px' src="+imgurl+"><div class='card-body'><h4 class='card-title'>"+sname+"</h4><p class='card-text'>"+des+"</p><a href='#' class='btn btn-primary'>Go somewhere</a></div></div></td>"
+	
+		);
+	
+		});
+		});
+	   
+	  
+	   
+	   
+	   
+	   </script>
        <script src="email.js"></script>
+	   
 
        <script
        src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
