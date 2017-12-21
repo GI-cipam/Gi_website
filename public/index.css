@@ -6,9 +6,12 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
-    background: #1c92d2; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1c92d2, #f2fcfe);
+	background: darkslategrey !important;
+    
+  }
+  .clsScroll{
+	  overflow-x: auto;
+	  overflow-y: hidden;
   }
   
   
@@ -123,6 +126,7 @@ body {
   font-size: 30px;
   color: white;
 }
+
 
 .button1{
     -webkit-transition-duration: 0.4s; /* Safari */
