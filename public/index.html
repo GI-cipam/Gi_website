@@ -6,9 +6,9 @@
             <meta name="description" content="">
             <meta name="author" content="">
             <link rel="icon" href="../../../../favicon.ico">
-        
+
             <title>Geographical Indications</title>
-            
+
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -28,9 +28,9 @@
                 .mySlides {display:none}
                 .w3-left, .w3-right, .w3-badge {cursor:pointer}
                 .w3-badge {height:13px;width:13px;padding:0}
-				
+
                 </style>
-                
+
     <body style="background: darkslategray !important;">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="background-color: #2d4d64">
                     <a class="navbar-brand" href="#"><i class="fa fa-globe fa-2x" aria-hidden="true"></i>Geographical Indications Of India</a>
@@ -49,20 +49,20 @@
                                 <a class="nav-link" href="/signup"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
                         </li>
                       </ul>
-                      
-                     
+
+
                         <form class="form-inline my-2 my-lg-0">
                           <input class="form-control mr-sm-2" type="search" placeholder="Search for GI" aria-label="Search" id="search_item">
                           <button class="btn btn-outline-link my-2 my-sm-0 button1 "  onclick="search()" type="submit">Search</button>
                         </form>
-                      
+
                     </div>
                   </nav>
                   <div id="User"  style="margin-top:2%">
                   <span id="username" style="color:rgb(255, 255, 255) ;padding-top:15px">UserName: </span>
                   <button class="btn btn-outline-link my-2 my-sm-0 button2" id="logOut" onclick="log_out()" style="float:right ; margin-right:2%">Log out</button>
-                   </div> 
-                  <div  id="carouselExampleIndicators" class="carousel slide span12 container" data-ride="carousel" style="margin-top:1.5%; width:100%">
+                   </div>
+                  <div  id="carouselExampleIndicators" class="carousel slide span12 container" data-ride="carousel" style="margin-top:1.5%; width:90%">
                     <div class="row">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -82,7 +82,7 @@
                                 <img  class="d-block img-fluid" src="https://image.slidesharecdn.com/umeshgi-160320061848/95/geographical-indications-18-638.jpg?cb=1458454779" alt="Third slide">
                             </div>
                          </div>
-                         
+
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -91,12 +91,12 @@
                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
-                    </a> 
+                    </a>
                 </div>
-				
-				
+
+
 				<span id="theading1" style="color:rgb(255, 255, 255) ;padding-top:15px; margin-left:2%; font-family: 'Philosopher', sans-serif; font-size: 30px; color: white;"></span>
-				
+
 				<div>
 				<div class="row" style="background: dimgrey; margin-left:20px; margin-right:20px;">
 				<div class="clsScroll" style="overflow-x: auto; overflow-y: hidden;">
@@ -107,9 +107,9 @@
 				</div>
 				</div>
 				</div>
-				
+
 				<span id="theading2" style="color:rgb(255, 255, 255) ;padding-top:15px; margin-left:2%; font-family: 'Philosopher', sans-serif; font-size: 30px; color: white;"></span>
-				
+
 				<div>
 				<div class="row" style="margin-left:20px; margin-right:20px; background: dimgrey">
 				<div class="clsScroll" style="overflow-x: auto; overflow-y: hidden;">
@@ -120,10 +120,10 @@
 				</div>
 				</div>
 				</div>
-				
-				
+
+
 				<span id="username" style="color:rgb(255, 255, 255) ;padding-top:15px">POPULAR GI's </span>
-				
+
 				<div>
 				<div class="row" style="background: dimgrey; margin-left:20px; margin-right:20px;">
 				<div class="clsScroll" style="overflow-x: auto; overflow-y: hidden;">
@@ -134,7 +134,7 @@
 				</div>
 				</div>
 				</div>
-				
+
 				<div>
 				<div class="row" style="background: dimgrey; margin-left:20px; margin-right:20px;">
 				<div class="clsScroll" style="overflow-x: auto; overflow-y: hidden;">
@@ -215,8 +215,8 @@
 				</div>
 				</div>
 				</div>
-			
-      
+
+
        <script>
         // Initialize Firebase
         var config = {
@@ -233,20 +233,20 @@
         if(user) {
         console.log('signed in');
         window.user = user;
-        div.innerHTML+=user.email;  
+        div.innerHTML+=user.email;
         console.log(user.email);
         }
         else{
-          div.innerHTML+="Guest User"; 
+          div.innerHTML+="Guest User";
         }
         });
         function log_out(){
-          
+
 		  firebase.auth().signOut().then(function() {
               console.log('signed out');
               // Sign-out successful.
              var div=document.getElementById('username');
-             div.innerHTML+="Guest User"; 
+             div.innerHTML+="Guest User";
   }, function(error) {
     // An error happened.
 });
@@ -268,82 +268,82 @@
 	   $(document).ready(function(){
 		var rootRef =firebase.database().ref().child("States");
 		rootRef.on("child_added",snap =>{
-	
+
 			var imgurl=snap.child("dpurl").val();
 			var sname=snap.child("name").val();
-	
+
 		$("#card_states").append(
-	
+
 		"<td><div class= 'card' style='width: 20rem; margin-top:20px; margin-bottom:20px;'><img class='card-img-top' style='height:200px' src="+imgurl+"><div class='card-body'><h4 class='card-title'>"+sname+"</h4></div></div></td>"
-	
+
 		);
-	
+
 		});
-	
+
 		$("#theading1").append("STATES");
 		});
-	   
-	  
-	   
-	   
-	   
+
+
+
+
+
 	   </script>
 	   <script>
 	   $(document).ready(function(){
 
 		var rootRef2 =firebase.database().ref().child("Categories");
 		rootRef2.on("child_added",snap =>{
-	
+
 			var imgurl=snap.child("dpurl").val();
 			var sname=snap.child("name").val();
-	
+
 		$("#card_categories").append(
-	
+
 		"<td><div class= 'card' style='width: 20rem; margin-top:20px; margin-bottom:20px;'><img class='card-img-top' style='height:200px' src="+imgurl+"><div class='card-body'><h4 class='card-title'>"+sname+"</h4></div></div></td>"
-	
+
 		);
-	
+
 		});
 		$("#theading2").append("CATEGORIES");
 		});
-	   
-	  
-	   
-	   
-	   
+
+
+
+
+
 	   </script>
 	   <script>
 	   $(document).ready(function(){
 
 		var rootRef3 =firebase.database().ref().child("Giproducts");
 		rootRef3.on("child_added",snap =>{
-	
+
 			var imgurl=snap.child("dpurl").val();
 			var sname=snap.child("name").val();
 			var des=snap.child("detail").val();
-	
+
 		$("#card_gi").append(
-	
+
 		"<td><div class= 'card' style='width: 20rem; margin-top:20px; margin-bottom:20px;'><img class='card-img-top' style='height:200px' src="+imgurl+"><div class='card-body'><h4 class='card-title'>"+sname+"</h4><p class='card-text'>"+des+"</p><a href='#' class='btn btn-primary'>Go somewhere</a></div></div></td>"
-	
+
 		);
-	
+
 		});
 		});
-	   
-	  
-	   
-	   
-	   
+
+
+
+
+
 	   </script>
        <script src="email.js"></script>
-	   
+
 
        <script
        src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-         
+
          <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
