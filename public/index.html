@@ -21,7 +21,7 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                 <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
                 <!-- Latest compiled JavaScript -->
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   </head>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
                 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
                 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
                 <style>
@@ -30,10 +30,10 @@
                 .w3-badge {height:13px;width:13px;padding:0}
 
                 </style>
-
+        </head>
     <body style="background: darkslategray !important;">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="background-color: #2d4d64">
-                    <a class="navbar-brand" href="#"><i class="fa fa-globe fa-2x" aria-hidden="true"></i>Geographical Indications Of India</a>
+                    <a class="navbar-brand" href="#"><i class="fa fa-globe" aria-hidden="true"></i> Geographical Indications Of India</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -58,11 +58,37 @@
 
                     </div>
                   </nav>
+                 
+                 
+                 
                   <div id="User"  style="margin-top:2%">
                   <span id="username" style="color:rgb(255, 255, 255) ;padding-top:15px">UserName: </span>
                   <button class="btn btn-outline-link my-2 my-sm-0 button2" id="logOut" onclick="log_out()" style="float:right ; margin-right:2%">Log out</button>
                    </div>
-                  <div  id="carouselExampleIndicators" class="carousel slide span12 container" data-ride="carousel" style="margin-top:1.5%; width:90%">
+                 
+                
+                
+                
+               <div class="sidebar">
+
+                <h2>Connect With Us!</h2>
+                  <div class="footer-social-icons">
+     
+                    <ul class="social-icons">
+                        <div class="wid1"><li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-facebook"></i></a></li></div>
+                        <div class="wid1"><li><a href="https://twitter.com/CIPAM_India" class="social-icon"> <i class="fa fa-twitter"></i></a></li></div>
+                        <div class="wid1"> <li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-rss"></i></a></li></div>
+                        <div class="wid1"><li><a href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A" class="social-icon"> <i class="fa fa-youtube"></i></a></li></div>
+                        <div class="wid1"><li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li></div>
+                        <!-- <div class="wid1" id="enddiv"><li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li></div> -->
+                    </ul>
+                </div>
+              
+              
+                 </div>
+                 
+                 
+                   <div  id="carouselExampleIndicators" class="carousel slide span12" data-ride="carousel" style="margin:0 auto; width:80%">
                     <div class="row">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -368,6 +394,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
 
     </body>
 
