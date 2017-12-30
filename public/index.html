@@ -19,12 +19,11 @@
                 <link href="index.css" rel="stylesheet">
                 <!-- jQuery library -->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
                 <!-- Latest compiled JavaScript -->
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
                 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
                 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-                
     <style>
                 .mySlides {display:none}
                 .w3-left, .w3-right, .w3-badge {cursor:pointer}
@@ -59,22 +58,22 @@
 
                     </div>
                   </nav>
-                 
-                 
-                 
+
+
+
                   <div id="User"  style="margin-top:2%">
                   <span id="username" style="color:rgb(255, 255, 255) ;padding-top:15px">UserName: </span>
                   <button class="btn btn-outline-link my-2 my-sm-0 button2" id="logOut" onclick="log_out()" style="float:right ; margin-right:2%">Log out</button>
                    </div>
-                 
-                
-                
-                
+
+
+
+
                <div class="sidebar">
 
                 <h2>Connect With Us!</h2>
                   <div class="footer-social-icons">
-     
+
                     <ul class="social-icons">
                         <div class="wid1"><li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-facebook"></i></a></li></div>
                         <div class="wid1"><li><a href="https://twitter.com/CIPAM_India" class="social-icon"> <i class="fa fa-twitter"></i></a></li></div>
@@ -84,11 +83,11 @@
                         <!-- <div class="wid1" id="enddiv"><li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li></div> -->
                     </ul>
                 </div>
-              
-              
+
+
                  </div>
-                 
-                 
+
+
                    <div  id="carouselExampleIndicators" class="carousel slide span12" data-ride="carousel" style="margin:0 auto; width:80%">
                     <div class="row">
                         <ol class="carousel-indicators">
@@ -247,14 +246,15 @@
        <script>
         // Initialize Firebase
         var config = {
-          apiKey: "AIzaSyAeFB6v4sdJpdnvHM6xIIiJz4Us5XibKIA",
-          authDomain: "gi-website-36c02.firebaseapp.com",
-          databaseURL: "https://gi-website-36c02.firebaseio.com",
-          projectId: "gi-website-36c02",
-          storageBucket: "",
-          messagingSenderId: "1092547245593"
+          apiKey: "AIzaSyCFS8wmVg-qy3VEXPCr2wooxKPNrZgBG4M",
+          authDomain: "gi-india.firebaseapp.com",
+          databaseURL: "https://gi-india.firebaseio.com",
+          projectId: "gi-india",
+          storageBucket: "gi-india.appspot.com",
+          messagingSenderId: "901822549863"
         };
         firebase.initializeApp(config);
+
         var div=document.getElementById('username');
         firebase.auth().onAuthStateChanged(user => {
         if(user) {
@@ -272,22 +272,19 @@
 		  firebase.auth().signOut().then(function() {
               console.log('signed out');
               // Sign-out successful.
-             
+
   }, function(error) {
     // An error happened.
 });
-
-
 
         }
         function search(){
           var search_item=document.getElementById('search_item').value;
           console.log(search_item);
-          var ref = firebase.database().ref("gi-website-36c02");
+          var ref = firebase.database().ref("gi-india");
           ref.orderByChild("gi_products").equalTo(search_item).on("child_added", function(snapshot) {
             console.log(snapshot.key);
           });
-
         }
        </script>
 	   <script>
@@ -303,16 +300,10 @@
 		"<td><div class= 'card' style='width: 20rem; margin-top:20px; margin-bottom:20px;'><img class='card-img-top' style='height:200px' src="+imgurl+"><div class='card-body'><h4 class='card-title'>"+sname+"</h4></div></div></td>"
 
 		);
-
 		});
 
 		$("#theading1").append("STATES");
 		});
-
-
-
-
-
 	   </script>
 	   <script>
 	   $(document).ready(function(){
@@ -332,11 +323,6 @@
 		});
 		$("#theading2").append("CATEGORIES");
 		});
-
-
-
-
-
 	   </script>
 	   <script>
 	   $(document).ready(function(){
@@ -353,14 +339,8 @@
 		"<td><div class= 'card' style='width: 20rem; margin-top:20px; margin-bottom:20px;'><img class='card-img-top' style='height:200px' src="+imgurl+"><div class='card-body'><h4 class='card-title'>"+sname+"</h4><p class='card-text'>"+des+"</p><a href='#' class='btn btn-primary'>Go somewhere</a></div></div></td>"
 
 		);
-
 		});
 		});
-
-
-
-
-
 	   </script>
     <script
        src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -394,5 +374,4 @@
 
 
     </body>
-
 </html>
