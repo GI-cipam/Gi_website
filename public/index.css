@@ -290,3 +290,10 @@ ul.social-icons {
 #namesize{
     font-size: 20px;
 }
+#map{
+    margin-top: 20px;
+    margin-left:27%; 
+    margin-right:30%;
+    height: 500px;
+    padding-right: 800px;
+}
