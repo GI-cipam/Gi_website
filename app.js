@@ -1,5 +1,13 @@
 var express=require('express');
 var nodemailer = require('nodemailer');
+var firebase = require('firebase');
+var app = firebase.initializeApp({ 
+  apiKey: "AIzaSyAeFB6v4sdJpdnvHM6xIIiJz4Us5XibKIA",
+  authDomain: "gi-website-36c02.firebaseapp.com",
+  databaseURL: "https://gi-website-36c02.firebaseio.com",
+  projectId: "gi-website-36c02",
+  storageBucket: "gi-website-36c02.appspot.com",
+  messagingSenderId: "1092547245593"});
 
 var home = require('./routes/home');
 var signin = require('./routes/sign_in');
