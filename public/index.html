@@ -242,7 +242,7 @@
 				</div>
 
 
-       
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>       
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -256,7 +256,7 @@
   };
 
   function email(){
-    $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
+    $.get("http://localhost:4000/send",{to:window.user,subject:"hey",text:"haha email send"},function(data){
         if(data=="sent"){        
           console.log('email send');
         }
