@@ -254,8 +254,16 @@
     storageBucket: "gi-website-36c02.appspot.com",
     messagingSenderId: "1092547245593"
   };
-  firebase.initializeApp(config);
 
+  function email(){
+    $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
+        if(data=="sent"){        
+          console.log('email send');
+        }
+        });
+  }
+
+  firebase.initializeApp(config);
 
         var div=document.getElementById('username');
         firebase.auth().onAuthStateChanged(user => {
@@ -264,6 +272,7 @@
         window.user = user;
         div.innerHTML+=user.email;
         console.log(user.email);
+        email();
         }
         else{
           console.log(window.user);
