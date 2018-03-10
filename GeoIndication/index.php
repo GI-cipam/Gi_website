@@ -72,13 +72,12 @@
 <body>
 		<!----start-wrap---->
 			<!----start-top-header----->
-			<div class="top-header" id="header">
+			<!-- <div class="top-header" id="header">
 				<div class="wrap">
 				<div class="top-header-left">
 					<ul>
 							<li><a href="login_signup.html" id="logintext"><span> </span>Login/SignUp </a></li>
-						<!-- <li><p><span> </span>Not a Member ? </p>&nbsp;<a class="reg" href="login_signup"> Register</a></li> -->
-						<!-- <li><p class="contact-info">Call Us Now :815-123-4567</p></li> -->
+
 						<div class="clear"> </div>
 					</ul>
 				</div>
@@ -87,16 +86,13 @@
 						<li><a class="face" href="https://www.facebook.com/cipamindia/"><span> </span></a></li>
 						<li><a class="twit" href="https://twitter.com/CIPAM_India"><span> </span></a></li>
 						<li><a class="pin" href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A"><span> </span></a></li>
-						<!-- <li><a class="social-icon" href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A"><span> </span></a></li> -->
 
-						<!-- <li><a class="social-icon" href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A"><i class="fa fa-youtube"></i></a></li> -->
-						  <!-- <div class="wid1"><li><a href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A" class="social-icon"> <i class="fa fa-youtube"></i></a></li></div> -->
 						<div class="clear"> </div>
 					</ul>
 				</div>
 				<div class="clear"> </div>
 			</div>
-			</div>
+			</div> -->
 			<!----//End-top-header----->
 			<!---start-header---->
 			<div class="header">
