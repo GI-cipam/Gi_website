@@ -454,8 +454,6 @@
 				<div class="footer-grid tags">
 					<h3>Tags</h3>
 					<ul>
-						<li><a href="index.php">Login</a></li>
-						<li><a href="index.php">Not a Member?</a></li>
 						<li><a href="list.php?name=">States</a></li>
 						<li><a href="list.php?name=">Categories</a></li>
 						<li><a href="feed.html">Feeds</a></li>
@@ -477,9 +475,11 @@
 							<li><a class="twit1 simptip-position-bottom simptip-movable" data-tooltip="twitter" href="https://twitter.com/CIPAM_India"><span> </span></a></li>
 							<!-- <li><a class="tub1 simptip-position-bottom simptip-movable" data-tooltip="tumblr" href="#"><span> </span></a></li> -->
 							<li><a class="pin1 simptip-position-bottom simptip-movable" data-tooltip="youtube" href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A"><span> </span></a></li>
+					
 							<div class="clear"> </div>
 						</ul>
 					</div>
+
 				</div>
 				<div class="clear"> </div>
 			</div>

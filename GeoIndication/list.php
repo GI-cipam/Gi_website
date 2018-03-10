@@ -78,17 +78,9 @@ margin-left:5%;
 </style>
 </head>
 <body>
-	<div class="top-header" id="header">
+	<!-- <div class="top-header" id="header">
 		<div class="wrap">
-		<!-- <div class="top-header-left">
-			<ul>
-				<li><a href="#"><span> </span> Agent Login</a></li>
-				<li><a href="#"><span> </span> Agent Login</a></li>
-				<li><p><span> </span>Not a Member ? </p>&nbsp;<a class="reg" href="#"> Register</a></li>
-				<li><p class="contact-info">Call Us Now :815-123-4567</p></li>
-				<div class="clear"> </div>
-			</ul>
-		</div> -->
+
 		<div class="top-header-right">
 			<ul>
 				<li><a class="face" href="https://www.facebook.com/cipamindia/"><span> </span></a></li>
@@ -99,7 +91,7 @@ margin-left:5%;
 		</div>
 		<div class="clear"> </div>
 	</div>
-	</div>
+	</div> -->
 	<!----//End-top-header----->
 	<!---start-header---->
 	<div class="header">
@@ -140,20 +132,15 @@ margin-left:5%;
 	</div>
 	<!---//End-header---->
 </div>
-
-<div>
+<div style="background: #2C3E50; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
 	<center>
-		<h1>
+		<h1><font color="white">
 			List of Geographical Indications
+		</font>
 		</h1>
 	</center>
 </div>
 <hr>
-
-
-
-
-
 <div>
 	<center><u>
 	<?php
@@ -262,8 +249,6 @@ margin-left:5%;
 			<div class="footer-grid tags">
 				<h3>Tags</h3>
 				<ul>
-					<li><a href="index.php">Login</a></li>
-					<li><a href="index.php">Not a Member?</a></li>
 					<li><a href="list.php?name=">States</a></li>
 					<li><a href="list.php?name=">Categories</a></li>
 					<li><a href="feed.html">Feeds</a></li>
