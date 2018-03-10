@@ -57,6 +57,8 @@
 		<!---//calender-style---->
 		  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 			<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 <style>
 #map{
     margin-top: 20px;
@@ -70,6 +72,7 @@
 
 	</head>
 <body>
+
 		<!----start-wrap---->
 			<!----start-top-header----->
 			<!-- <div class="top-header" id="header">
@@ -133,6 +136,29 @@
 			</div>
 			<!---//End-header---->
 		</div>
+
+
+
+
+			<!-- start-side-social-icons -->
+			<div class="sidebar" style="margin-right:0; margin-top:10%; z-index: 20; ">
+
+				<div class="footer-social-icons">
+
+					<ul class="social-icons">
+							<div class="wid1"><li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-facebook"></i></a></li></div>
+							<div class="wid1"><li><a href="https://twitter.com/CIPAM_India" class="social-icon"> <i class="fa fa-twitter"></i></a></li></div>
+							<div class="wid1"> <li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-rss"></i></a></li></div>
+							<div class="wid1"><li><a href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A" class="social-icon"> <i class="fa fa-youtube"></i></a></li></div>
+							<!-- <div class="wid1"><li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li></div> -->
+							<!-- <div class="wid1" id="enddiv"><li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li></div> -->
+					</ul>
+			</div>
+			 </div>
+			 <!-- End-side-social-icons -->
+
+
+
 		<!----start-images-slider---->
 		<div class="images-slider">
 			<!-- start slider -->
@@ -475,7 +501,7 @@
 							<li><a class="twit1 simptip-position-bottom simptip-movable" data-tooltip="twitter" href="https://twitter.com/CIPAM_India"><span> </span></a></li>
 							<!-- <li><a class="tub1 simptip-position-bottom simptip-movable" data-tooltip="tumblr" href="#"><span> </span></a></li> -->
 							<li><a class="pin1 simptip-position-bottom simptip-movable" data-tooltip="youtube" href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A"><span> </span></a></li>
-					
+
 							<div class="clear"> </div>
 						</ul>
 					</div>
