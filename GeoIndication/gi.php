@@ -94,11 +94,11 @@
     <div class="clear"> </div>
   </div>
   </div> -->
-  <!----//End-top-header----->
+  <!---//End-top-header----->
   <!---start-header---->
 
 	<!-- start-side-social-icons -->
-	<div class="sidebar" style="margin-right:0; margin-top:10%; z-index: 20; ">
+	<div class="sidebar" style="margin-right:0; margin-top:170px; z-index: 20; ">
 
 		<div class="footer-social-icons">
 
@@ -113,44 +113,44 @@
 	</div>
 	 </div>
 	 <!-- End-side-social-icons -->
-  <div class="header">
-    <div class="wrap">
-    <!--- start-logo---->
-    <div class="logo">
-      <a href="index.php"><img src="images/gi_img.jpg" style="max-width: 200px; max-height: 100px; margin-top: -30px;" /></a>
-    </div>
-    <!--- //End-logo---->
-    <!--- start-top-nav---->
-    <div class="top-nav">
-        <ul class="flexy-menu thick orange">
-          <li class="active"><a href="index.php">Home</a></li>
-          <li><a href="list.php?name=">GI's</a></li>
-          <li><a href="feed.html">Feed</a></li>
-					<li><a href="aboutPage.html">About</a></li>
-        </ul>
-        <div class="search-box">
-          <div id="sb-search" class="sb-search">
-            <form>
-              <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-              <input class="sb-search-submit" type="submit" value="">
-              <span class="sb-icon-search"> </span>
-            </form>
-          </div>
-        </div>
-        <!----search-scripts---->
-        <script src="js/modernizr.custom.js"></script>
-        <script src="js/classie.js"></script>
-        <script src="js/uisearch.js"></script>
-        <script>
-          new UISearch( document.getElementById( 'sb-search' ) );
-        </script>
-        <!----//search-scripts---->
-    </div>
-    <!--- //End-top-nav---->
-    <div class="clear"> </div>
-  </div>
-  <!---//End-header---->
-</div>
+	 <div class="header">
+	 	<div class="wrap">
+	 	<!--- start-logo---->
+	 	<div class="logo">
+	 		<a href="index.php"><img src="images/gi_img.jpg" style="max-width: 200px; max-height: 100px; margin-top: -30px;" /></a>
+	 	</div>
+	 	<!--- //End-logo---->
+	 	<!--- start-top-nav---->
+	 	<div class="top-nav">
+	 			<ul class="flexy-menu thick orange">
+	 				<li class="active"><a href="index.php">Home</a></li>
+	 				<li><a href="list.php?name=">GI's</a></li>
+	 				<li><a href="feed.html">Feed</a></li>
+	 				<li><a href="aboutPage.html">About</a></li>
+	 			</ul>
+	 			<div class="search-box">
+	 				<div id="sb-search" class="sb-search">
+	 					<form>
+	 						<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+	 						<input class="sb-search-submit" type="submit" value="">
+	 						<span class="sb-icon-search"> </span>
+	 					</form>
+	 				</div>
+	 			</div>
+	 			<!----search-scripts---->
+	 			<script src="js/modernizr.custom.js"></script>
+	 			<script src="js/classie.js"></script>
+	 			<script src="js/uisearch.js"></script>
+	 			<script>
+	 				new UISearch( document.getElementById( 'sb-search' ) );
+	 			</script>
+	 			<!----//search-scripts---->
+	 	</div>
+	 	<!--- //End-top-nav---->
+	 	<div class="clear"> </div>
+	 </div>
+	 <!---//End-header---->
+	 </div>
 
 
 

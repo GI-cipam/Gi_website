@@ -21,7 +21,7 @@ if(g==gi){
 
 
 
-  $("#gi_img").append("<img src="+gi_url+" style='max-width: 350px; max-height: 200px;'/>");
+  $("#gi_img").append("<img src="+gi_url+" style='max-height: 200px;'/>");
   $("#gstate").append(statename);
   $("#gcat").append(cat);
   $("#des").append(gides);

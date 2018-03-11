@@ -80,6 +80,21 @@ margin-left:5%;
 </style>
 </head>
 <body>
+
+	<div class="sidebar" style="margin-right:0; margin-top:170px; z-index: 20; ">
+
+		<div class="footer-social-icons">
+
+			<ul class="social-icons">
+					<div class="wid1"><li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-facebook"></i></a></li></div>
+					<div class="wid1"><li><a href="https://twitter.com/CIPAM_India" class="social-icon"> <i class="fa fa-twitter"></i></a></li></div>
+					<div class="wid1"> <li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-rss"></i></a></li></div>
+					<div class="wid1"><li><a href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A" class="social-icon"> <i class="fa fa-youtube"></i></a></li></div>
+					<!-- <div class="wid1"><li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li></div> -->
+					<!-- <div class="wid1" id="enddiv"><li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li></div> -->
+			</ul>
+	</div>
+	 </div>
 	<!-- <div class="top-header" id="header">
 		<div class="wrap">
 
@@ -94,7 +109,7 @@ margin-left:5%;
 		<div class="clear"> </div>
 	</div>
 	</div> -->
-	<!----//End-top-header----->
+	<!---//End-top-header----->
 	<!---start-header---->
 	<div class="header">
 		<div class="wrap">
@@ -133,25 +148,12 @@ margin-left:5%;
 		<div class="clear"> </div>
 	</div>
 	<!---//End-header---->
-</div>
+	</div>
 
 
 
 <!-- start-side-social-icons -->
-<div class="sidebar" style="margin-right:0; margin-top:10%; z-index: 20; ">
 
-	<div class="footer-social-icons">
-
-		<ul class="social-icons">
-				<div class="wid1"><li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-facebook"></i></a></li></div>
-				<div class="wid1"><li><a href="https://twitter.com/CIPAM_India" class="social-icon"> <i class="fa fa-twitter"></i></a></li></div>
-				<div class="wid1"> <li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-rss"></i></a></li></div>
-				<div class="wid1"><li><a href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A" class="social-icon"> <i class="fa fa-youtube"></i></a></li></div>
-				<!-- <div class="wid1"><li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li></div> -->
-				<!-- <div class="wid1" id="enddiv"><li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li></div> -->
-		</ul>
-</div>
- </div>
  <!-- End-side-social-icons -->
 
 

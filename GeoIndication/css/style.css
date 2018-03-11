@@ -2089,7 +2089,8 @@ span.mail a:hover{
 	}
 	.flexy-menu>li.showhide {
 		background:none;
-		height: 18px;
+		/*height: 18px;*/
+		margin-top: -80px;
 	}
 	.flexy-menu>li.showhide span.title {
 		display: none;
@@ -2098,11 +2099,12 @@ span.mail a:hover{
 		margin-right: 0%;
 	}
 	.flexy-menu>li.showhide span.icon {
-		/*margin: 17px 20px;*/
+		margin: 17px 20px;
 		float: right;
 		position: absolute;
 		right: 3em;
-		top: -85px;
+		top: -5px;
+		/*top:0px;*/
 	}
 	.flexy-menu>li.showhide .icon em {
 		margin-bottom: 3px;
@@ -2281,7 +2283,8 @@ span.mail a:hover{
 	}
 	.flexy-menu>li.showhide {
 		background:none;
-		height: 18px;
+		/*height: 18px;*/
+		margin-top: -80px;
 	}
 	.flexy-menu>li.showhide span.title {
 		display: none;
@@ -2290,11 +2293,12 @@ span.mail a:hover{
 		margin-right: 0%;
 	}
 	.flexy-menu>li.showhide span.icon {
-		/*margin: 17px 20px;*/
+		margin: 17px 20px;
 		float: right;
 		position: absolute;
 		right: 3em;
-		top: -85px;
+		top: -5px;
+		/*top:0px;*/
 	}
 	.flexy-menu>li.showhide .icon em {
 		margin-bottom: 3px;
@@ -2473,7 +2477,8 @@ span.mail a:hover{
 	}
 	.flexy-menu>li.showhide {
 		background:none;
-		height: 18px;
+		/*height: 18px;*/
+		margin-top: -80px;
 	}
 	.flexy-menu>li.showhide span.title {
 		display: none;
@@ -2482,11 +2487,12 @@ span.mail a:hover{
 		margin-right: 0%;
 	}
 	.flexy-menu>li.showhide span.icon {
-		/*margin: 17px 20px;*/
+		margin: 17px 20px;
 		float: right;
 		position: absolute;
 		right: 3em;
-		top: -85px;
+		top: -5px;
+		/*top:0px;*/
 	}
 	.flexy-menu>li.showhide .icon em {
 		margin-bottom: 3px;
@@ -2702,7 +2708,8 @@ span.mail a:hover{
 	}
 	.flexy-menu>li.showhide {
 		background:none;
-		height: 18px;
+		/*height: 18px;*/
+		margin-top: -80px;
 	}
 	.flexy-menu>li.showhide span.title {
 		display: none;
@@ -2711,11 +2718,12 @@ span.mail a:hover{
 		margin-right: 0%;
 	}
 	.flexy-menu>li.showhide span.icon {
-		/*margin: 17px 20px;*/
+		margin: 17px 20px;
 		float: right;
 		position: absolute;
 		right: 3em;
-		top: -85px;
+		top: -5px;
+		/*top:0px;*/
 	}
 	.flexy-menu>li.showhide .icon em {
 		margin-bottom: 3px;
