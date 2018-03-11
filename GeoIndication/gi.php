@@ -280,8 +280,8 @@
 		<div class="footer-grid tags">
 			<h3>Tags</h3>
 			<ul>
-				<li><a href="index.php">Login</a></li>
-				<li><a href="index.php">Not a Member?</a></li>
+				<!-- <li><a href="index.php">Login</a></li>
+				<li><a href="index.php">Not a Member?</a></li> -->
 				<li><a href="list.php?name=">States</a></li>
 				<li><a href="list.php?name=">Categories</a></li>
 				<li><a href="feed.html">Feeds</a></li>
