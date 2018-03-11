@@ -160,6 +160,7 @@
 
 
 		<!----start-images-slider---->
+		<div>
 		<div class="images-slider">
 			<!-- start slider -->
 		    <div id="fwslider">
@@ -238,6 +239,8 @@
 		    </div>
 		    <!--/slider -->
 		</div>
+
+	</div>
 				<!----start-offers---->
 		<div class="offers">
 			<div class="offers-head">
