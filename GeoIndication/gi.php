@@ -64,8 +64,9 @@
         height: 500px;
     }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz-G6eCk8lXI_8oWwQeyjNljoct71T6TU&callback=initMap"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script> -->
+    <!-- <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script> -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <style>
@@ -98,7 +99,7 @@
   <!---start-header---->
 
 	<!-- start-side-social-icons -->
-	<div class="sidebar" style="margin-right:0; margin-top:170px; z-index: 20; ">
+	<!-- <div class="sidebar" style="margin-right:0; margin-top:170px; z-index: 20; ">
 
 		<div class="footer-social-icons">
 
@@ -107,11 +108,9 @@
 					<div class="wid1"><li><a href="https://twitter.com/CIPAM_India" class="social-icon"> <i class="fa fa-twitter"></i></a></li></div>
 					<div class="wid1"> <li><a href="https://www.facebook.com/cipamindia/" class="social-icon"> <i class="fa fa-rss"></i></a></li></div>
 					<div class="wid1"><li><a href="https://www.youtube.com/channel/UCVi34sYvMBclXSk4JJV6r6A" class="social-icon"> <i class="fa fa-youtube"></i></a></li></div>
-					<!-- <div class="wid1"><li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li></div> -->
-					<!-- <div class="wid1" id="enddiv"><li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li></div> -->
 			</ul>
 	</div>
-	 </div>
+	 </div> -->
 	 <!-- End-side-social-icons -->
 	 <div class="header">
 	 	<div class="wrap">
@@ -125,16 +124,16 @@
 	 			<ul class="flexy-menu thick orange">
 	 				<li class="active"><a href="index.php">Home</a></li>
 	 				<li><a href="list.php?name=">GI's</a></li>
-	 				<li><a href="feed.html">Feed</a></li>
-	 				<li><a href="aboutPage.html">About</a></li>
+	 				<li><a href="feed.php">Feed</a></li>
+	 				<li><a href="aboutPage.php">About</a></li>
 	 			</ul>
 	 			<div class="search-box">
 	 				<div id="sb-search" class="sb-search">
-	 					<form>
-	 						<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-	 						<input class="sb-search-submit" type="submit" value="">
-	 						<span class="sb-icon-search"> </span>
-	 					</form>
+						<form action="list.php" method="get">
+							<input class="sb-search-input gi-name" placeholder="GI/State/Category..." type="search" name="name" id="search">
+							<input class="sb-search-submit search-name" type="submit" value="">
+							<span class="sb-icon-search"> </span>
+						</form>
 	 				</div>
 	 			</div>
 	 			<!----search-scripts---->
@@ -154,11 +153,11 @@
 
 
 
-<div style="margin-top: 40px; margin-bottom: 30px;">
+<div style="padding-top: 30px; padding-bottom: 30px;margin-top:20px;background: brown;">
   <center>
 	<?php
 	$my_gi=$_GET['gi'];
-	 echo '<u><h1><font color="#303090" id="gi" >'.$my_gi.'</font></h1></u>';
+	 echo '<u><h1><font color="#FFFFFF" id="gi" >'.$my_gi.'</font></h1></u>';
 	?>
 </center>
 </div>
@@ -232,15 +231,15 @@
  -->
 
 
-
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXi1jTFXKeKj7PnHpIuYNd733iXGFLCto"></script>
  <div style="margin-bottom: 50px;">
  	<div class="client-head" style="margin-bottom: 30px;">
  		<u><h3>Map</h3></u>
  	</div>
- 	<div>
+	<div id="map"></div>
+ 	<!-- <div>
  	<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15280355.937844243!2d73.72803740341402!3d20.76879687797472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1520109892279"  frameborder="0" allowfullscreen></iframe>
- 	</div>
+ 	</div> -->
  </div>
 
 
@@ -284,8 +283,8 @@
 				<li><a href="index.php">Not a Member?</a></li> -->
 				<li><a href="list.php?name=">States</a></li>
 				<li><a href="list.php?name=">Categories</a></li>
-				<li><a href="feed.html">Feeds</a></li>
-				<li><a href="aboutPage.html">About</a></li>
+				<li><a href="feed.php">Feeds</a></li>
+				<li><a href="aboutPage.php">About</a></li>
 
 				<div class="clear"> </div>
 			</ul>
@@ -350,5 +349,33 @@ window.onload = function () {
 	firebase.initializeApp(config);
 </script>
 <script src="gi.js"></script>
+<!-- <script>
+var initVal = "GI/State/Category..."
+$(".search-name").attr("disabled", "false");
+$(".gi-name").blur(function(){
+		if ($(this).val() != initVal && $(this).val() != "") {
+				$(".search-name").removeAttr("disabled");
+		} else {
+				$(".search-name").attr("disabled", "true");
+		}
+});
+</script> -->
+
+
+<!-- <script>
+function myMap() {
+
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({position: myCenter,animation: google.maps.Animation.BOUNCE});
+  marker.setMap(map);
+}
+</script> -->
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXi1jTFXKeKj7PnHpIuYNd733iXGFLCto&callback=myMap"></script> -->
+
+
 </body>
 </html>

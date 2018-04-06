@@ -245,7 +245,7 @@ body{
 .top-nav{
 	float:right;
 	position: relative;
-	width: 67%;
+	width: 73%;
 }
 /*----//main-header----*/
 /*----top-nav-----*/
@@ -547,7 +547,7 @@ body{
 	border-bottom: 1px solid #eee;
 }
 .search-box{
-	width: 100%;
+	width: 70%;
 }
 .sb-search {
 	position: absolute;
@@ -1881,7 +1881,7 @@ span.mail a:hover{
 		width: 80%;
 	}
 	.top-nav {
-		width: 67%;
+		width: 73%;
 	}
 	.p-ww span {
 		margin: 0 0.5em;
@@ -1898,7 +1898,7 @@ span.mail a:hover{
 		width: 80%;
 	}
 	.top-nav {
-		width: 67%;
+		width: 94%;
 	}
 	.p-ww span {
 		margin: 0 0.5em;
@@ -1931,7 +1931,7 @@ span.mail a:hover{
 	}
 	.top-nav {
 		/*width: 84%;*/
-		width: 67%
+		width: 100%
 	}
 	.p-ww span {
 		margin: 0 0.5em;

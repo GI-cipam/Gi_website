@@ -64,8 +64,8 @@
 			height: 500px;
 	}
 	</style>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script> -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <style>
@@ -77,6 +77,18 @@ width: 90%;
 margin-right: 5%;
 margin-left:5%;
 }
+</style>
+<style>
+	.card{
+		width: 30%;
+		margin: 1.66%;
+	}
+	div{
+		-webkit-align-content: center;
+			align-content: center;
+	}
+
+
 </style>
 </head>
 <body>
@@ -123,16 +135,17 @@ margin-left:5%;
 				<ul class="flexy-menu thick orange">
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="list.php?name=">GI's</a></li>
-					<li><a href="feed.html">Feed</a></li>
-					<li><a href="aboutPage.html">About</a></li>
+					<li><a href="feed.php">Feed</a></li>
+					<li><a href="aboutPage.php">About</a></li>
 				</ul>
 				<div class="search-box">
 					<div id="sb-search" class="sb-search">
-						<form>
-							<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-							<input class="sb-search-submit" type="submit" value="">
+						<form action="list.php" method="get">
+							<input class="sb-search-input gi-name" placeholder="GI/State/Category..." type="search" name="name" id="search">
+							<input class="sb-search-submit search-name" type="submit" value="">
 							<span class="sb-icon-search"> </span>
 						</form>
+
 					</div>
 				</div>
 				<!----search-scripts---->
@@ -159,7 +172,7 @@ margin-left:5%;
 
 
 
-<div style="background: #2C3E50; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
+<div style="background: #1DD2AF; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
 	<center>
 		<h1><font color="white">
 			List of Geographical Indications
@@ -168,6 +181,9 @@ margin-left:5%;
 	</center>
 </div>
 <hr>
+
+
+
 <div>
 	<center><u>
 	<?php
@@ -176,12 +192,12 @@ margin-left:5%;
 		echo '<h1 id="gistate"></h1>';
 	}
 		else{
-	 echo '<h1 id="gistate">'.$my_vars.'</h1>';}
+	 echo '<h1 id="gistate" style="color: tomato;">'.$my_vars.'</h1>';}
 	?>
 </u></center>
 </div>
 
-<div class="container">
+<!-- <div class="container">
 <table  class="table table-hover">
 	 <thead>
 		 <tr>
@@ -194,7 +210,10 @@ margin-left:5%;
 
 	 </tbody>
  </table>
-</div>
+</div> -->
+
+	<div id="s_gi" style="margin-left:15%; margin-bottom: 100px;">
+	</div>
 <!-- <script>
 
 // var c = document.getElementById("giname").innerHTML;
@@ -202,14 +221,14 @@ margin-left:5%;
 
 
 </script> -->
-<hr>
 
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXi1jTFXKeKj7PnHpIuYNd733iXGFLCto"></script>
 <div style="margin-bottom: 50px;">
 	<div class="client-head" style="margin-bottom: 30px;">
 		<u><h3>Map</h3></u>
 	</div>
-	<div>
-	<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15280355.937844243!2d73.72803740341402!3d20.76879687797472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1520109892279"  frameborder="0" allowfullscreen></iframe>
+	<div id="map">
+	<iframe ></iframe>
 	</div>
 </div>
 
@@ -246,7 +265,7 @@ margin-left:5%;
 				}
 			})(marker, i));
 		}
-	</script>
+	</script> -->
 
 
 	<div class="footer" style="bottom: 0px">
@@ -278,8 +297,8 @@ margin-left:5%;
 				<ul>
 					<li><a href="list.php?name=">States</a></li>
 					<li><a href="list.php?name=">Categories</a></li>
-					<li><a href="feed.html">Feeds</a></li>
-					<li><a href="aboutPage.html">About</a></li>
+					<li><a href="feed.php">Feeds</a></li>
+					<li><a href="aboutPage.php">About</a></li>
 
 					<div class="clear"> </div>
 				</ul>
@@ -344,6 +363,17 @@ window.onload = function () {
 	firebase.initializeApp(config);
 </script>
 		<script src="list.js"></script>
+		<!-- <script>
+		var initVal = "GI/State/Category..."
+		$(".search-name").attr("disabled", "false");
+		$(".gi-name").blur(function(){
+				if ($(this).val() != initVal && $(this).val() != "") {
+						$(".search-name").removeAttr("disabled");
+				} else {
+						$(".search-name").attr("disabled", "true");
+				}
+		});
+		</script> -->
 
 
 </body>

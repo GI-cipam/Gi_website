@@ -1,4 +1,5 @@
 var c = document.getElementById("gistate").innerHTML;
+var ccaps = c.toUpperCase();
 var ce = "";
 
 
@@ -7,26 +8,57 @@ rootRef.on("child_added",function(datasnap){
   //x.innerText=datasnap.val();
 //  alert(datasnap.val());
 var sname = datasnap.child("state").val();
+var snamecaps = sname.toUpperCase();
 var cate = datasnap.child("category").val();
+var catecaps = cate.toUpperCase();
+var giname = datasnap.child("name").val();
+var ginamecaps = giname.toUpperCase();
 
-if(c==sname){
+if(ccaps==snamecaps){
   var gi = datasnap.child("name").val();
   var statename = datasnap.child("state").val();
   var cat = datasnap.child("category").val();
-  $("#s_gi").append("<tr><td><a href='gi.php?gi="+gi+"'>"+gi+"</a></td><td>"+statename+"</td><td>"+cat+"</td></tr>");
+  var imgurl = datasnap.child("dpurl").val();
+  $("#s_gi").append("<div class='card' style='width: 18rem;display:inline-block'><img class='card-img-top' src="+imgurl+" style='width:300px;height:150px;'><div class='card-body'><h5 class='card-title'>"+gi+"</h5><p class='card-text'>"+statename+"/"+cat+"</p><a href='gi.php?gi="+gi+"' class='btn btn-primary'>Details</a></div></div>");
+
+  // $("#s_gi").append("<tr><td><a href='gi.php?gi="+gi+"'>"+gi+"</a></td><td>"+statename+"</td><td>"+cat+"</td></tr>");
 }
-if(c==ce){
+if(ccaps==ce){
   var gi = datasnap.child("name").val();
   var statename = datasnap.child("state").val();
   var cat = datasnap.child("category").val();
-  $("#s_gi").append("<tr><td><a href='gi.php?gi="+gi+"'>"+gi+"</a></td><td>"+statename+"</td><td>"+cat+"</td></tr>");
+  var imgurl = datasnap.child("dpurl").val();
+  $("#s_gi").append("<div class='card' style='width: 18rem;display:inline-block'><img class='card-img-top' src="+imgurl+" style='width:300px;height:150px;'><div class='card-body'><h5 class='card-title'>"+gi+"</h5><p class='card-text'>"+statename+"/"+cat+"</p><a href='gi.php?gi="+gi+"' class='btn btn-primary'>Details</a></div></div>");
+
+  // $("#s_gi").append("<tr><td><a href='gi.php?gi="+gi+"'>"+gi+"</a></td><td>"+statename+"</td><td>"+cat+"</td></tr>");
 }
-if(c==cate){
+if(ccaps==catecaps){
   var gi = datasnap.child("name").val();
   var statename = datasnap.child("state").val();
   var cat = datasnap.child("category").val();
-  $("#s_gi").append("<tr><td><a href='gi.php?gi="+gi+"'>"+gi+"</a></td><td>"+statename+"</td><td>"+cat+"</td></tr>");
+  var imgurl = datasnap.child("dpurl").val();
+  $("#s_gi").append("<div class='card' style='width: 18rem;display:inline-block'><img class='card-img-top' src="+imgurl+" style='width:300px;height:150px;'><div class='card-body'><h5 class='card-title'>"+gi+"</h5><p class='card-text'>"+statename+"/"+cat+"</p><a href='gi.php?gi="+gi+"' class='btn btn-primary'>Details</a></div></div>");
+
+  // $("#s_gi").append("<tr><td><a href='gi.php?gi="+gi+"'>"+gi+"</a></td><td>"+statename+"</td><td>"+cat+"</td></tr>");
 }
+if(ccaps==ginamecaps){
+  var gi = datasnap.child("name").val();
+  var statename = datasnap.child("state").val();
+  var cat = datasnap.child("category").val();
+  var imgurl = datasnap.child("dpurl").val();
+  $("#s_gi").append("<div class='card' style='width: 18rem;display:inline-block'><img class='card-img-top' src="+imgurl+" style='width:300px;height:150px;'><div class='card-body'><h5 class='card-title'>"+gi+"</h5><p class='card-text'>"+statename+"/"+cat+"</p><a href='gi.php?gi="+gi+"' class='btn btn-primary'>Details</a></div></div>");
+
+
+}
+
+// if(ccaps!=snamecaps && ccaps!=ce && ccaps!=catecaps && ccaps!=ginamecaps){
+//   document.getElementById("gistate").innerHTML = "";
+//
+//
+// }
+
+
+// "<div class='card' style='width: 18rem;display:inline-block'><img class='card-img-top' src="+imgurl+"><div class='card-body'><h5 class='card-title'>"+gi+"</h5><p class='card-text'>"+statename+"/"+cat+"</p><a href='gi.php?gi="+gi+"' class='btn btn-primary'>Details</a></div></div>"
 
 // else{
 //   var gi = datasnap.child("name").val();

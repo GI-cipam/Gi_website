@@ -124,18 +124,25 @@
 						<ul class="flexy-menu thick orange">
 							<li class="active"><a href="index.php">Home</a></li>
 							<li><a href="list.php?name=">GI's</a></li>
-							<li><a href="feed.html">Feed</a></li>
-							<li><a href="aboutPage.html">About</a></li>
+							<li><a href="feed.php">Feed</a></li>
+							<li><a href="aboutPage.php">About</a></li>
+
 						</ul>
 						<div class="search-box">
 							<div id="sb-search" class="sb-search">
-								<form>
-									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-									<input class="sb-search-submit" type="submit" value="">
+								<form action="list.php" method="get">
+									<input class="sb-search-input gi-name" placeholder="GI/State/Category..." type="search" name="name" id="search">
+									<input class="sb-search-submit search-name" type="submit" value="">
 									<span class="sb-icon-search"> </span>
 								</form>
+
 							</div>
 						</div>
+						<!-- <div class="search-box">
+							<div id="sb-search" class="sb-search"> -->
+
+							<!-- </div>
+						</div> -->
 						<!----search-scripts---->
 						<script src="js/modernizr.custom.js"></script>
 						<script src="js/classie.js"></script>
@@ -162,7 +169,7 @@
 
 		<!----start-images-slider---->
 
-		<div class="images-slider">
+		<div class="images-slider" style="margin-bottom:10px;">
 			<!-- start slider -->
 		    <div id="fwslider">
 		        <div class="slider_container">
@@ -173,15 +180,14 @@
 		                <div class="slide_content">
 		                     <div class="slide_content_wrap">
 		                        <!-- Text title -->
-		                        <h4 class="title">To travel is to live</h4>
+		                        <h4 class="title">Experience the cultural and intellectual heritage of India.</h4>
 		                        <!-- /Text title -->
 		                        <!-- Text description -->
-		                        <p class="description">Find your Favourite Geographical Indication from 317 Listed GI's.</p>
+		                        <p class="description">Find your Favourite Geographical Indication from 278 Listed GI's.</p>
 		                        <!-- /Text description -->
 		                        <div class="slide-btns description">
 		                        	<ul>
-		                        		<li><a class="mapbtn" href="#map">Show on the map </a></li>
-		                        		<li><a class="minfo" href="list.php">Show All</a></li>
+		                        		<li><a class="minfo" href="list.php?name=">Show All GI's</a></li>
 		                        		<div class="clear"> </div>
 		                        	</ul>
 		                        </div>
@@ -191,19 +197,18 @@
 
 
 								<div class="slide">
-										<img src="https://static2.tripoto.com/media/filter/nl/img/2402/SpotDocument/somnath_temple_veraval_gujarat1.jpg" alt="" width="100%" height="700px"/>
+										<img src="https://static2.tripoto.com/media/filter/nl/img/2402/SpotDocument/somnath_temple_veraval_gujarat1.jpg" width="100%" height="700px"/>
 										<div class="slide_content">
 												 <div class="slide_content_wrap">
 														<!-- Text title -->
-														<h4 class="title">To travel is to live</h4>
+														<h4 class="title">Experience the cultural and intellectual heritage of India.</h4>
 														<!-- /Text title -->
 														<!-- Text description -->
-														<p class="description">Find your Favourite Geographical Indication from 317 Listed GI's.</p>
+														<p class="description">Find your Favourite Geographical Indication from 278 Listed GI's.</p>
 														<!-- /Text description -->
 														<div class="slide-btns description">
 															<ul>
-																<li><a class="mapbtn" href="#map">Show on the map </a></li>
-																<li><a class="minfo" href="list.php">Show All</a></li>
+																<li><a class="minfo" href="list.php?name=">Show All GI's</a></li>
 																<div class="clear"> </div>
 															</ul>
 														</div>
@@ -217,15 +222,14 @@
 										<div class="slide_content">
 												 <div class="slide_content_wrap">
 														<!-- Text title -->
-														<h4 class="title">To travel is to live</h4>
+														<h4 class="title">Experience the cultural and intellectual heritage of India.</h4>
 														<!-- /Text title -->
 														<!-- Text description -->
-														<p class="description">Find your Favourite Geographical Indication from 317 Listed GI's.</p>
+														<p class="description">Find your Favourite Geographical Indication from 278 Listed GI's.</p>
 														<!-- /Text description -->
 														<div class="slide-btns description">
 															<ul>
-																<li><a class="mapbtn" href="#map">Show on the map </a></li>
-																<li><a class="minfo" href="list.php">Show All</a></li>
+																<li><a class="minfo" href="list.php?name=">Show All GI's</a></li>
 																<div class="clear"> </div>
 															</ul>
 														</div>
@@ -243,10 +247,10 @@
 
 
 				<!----start-offers---->
-		<div class="offers">
-			<div class="offers-head">
+		<div style="margin-bottom:10px;">
+			<div class="offers-head" style="background: darkgray;">
 				<h3>STATES</h3>
-				<p>All Geographical Indications across India</p>
+				<h4 style="margin-top: 10px;">All Geographical Indications across India</h4>
 			</div>
 			<!-- start content_slider -->
 			<!-- FlexSlider -->
@@ -273,7 +277,7 @@
 			<!-- Place somewhere in the <body> of your page -->
 
 
-			<div class="slider" style="margin-bottom: 20px;">
+			<div class="slider">
 
 
 
@@ -388,10 +392,10 @@
 
 		<!----//End-images-slider---->
 		<!----start-clients---->
-		<div style="margin-bottom: 50px;" >
-			<div class="client-head" style="margin-bottom: 30px;">
+		<div style="margin-bottom: 50px; " >
+			<div class="client-head" style="padding-bottom: 50px;padding-top:50px;background: darkkhaki;">
 				<h3>Category</h3>
-				<span>All Geographical Indications are placed under certain Categories.</span>
+				<h4 style="margin-top: 10px;">All Geographical Indications are placed under certain Categories.</h4>
 			</div>
 			<div>
 
@@ -408,7 +412,7 @@
 		<!----//End-clients---->
 
 
-		<div style="margin-bottom: 50px;" >
+		<!-- <div style="margin-bottom: 50px;" >
 			<div class="client-head" style="margin-bottom: 30px;">
 				<h3>Map</h3>
 			</div>
@@ -448,7 +452,7 @@
 		        }
 		      })(marker, i));
 		    }
-		  </script>
+		  </script> -->
 
 
 
@@ -486,8 +490,8 @@
 					<ul>
 						<li><a href="list.php?name=">States</a></li>
 						<li><a href="list.php?name=">Categories</a></li>
-						<li><a href="feed.html">Feeds</a></li>
-						<li><a href="aboutPage.html">About</a></li>
+						<li><a href="feed.php">Feeds</a></li>
+						<li><a href="aboutPage.php">About</a></li>
 
 						<div class="clear"> </div>
 					</ul>
@@ -540,6 +544,17 @@
 			firebase.initializeApp(config);
 		</script>
 		<script src="index.js"></script>
+		<!-- <script>
+		var initVal = "GI/State/Category..."
+    $(".search-name").attr("disabled", "false");
+    $(".gi-name").blur(function(){
+        if ($(this).val() != initVal && $(this).val() != "") {
+            $(".search-name").removeAttr("disabled");
+        } else {
+            $(".search-name").attr("disabled", "true");
+        }
+    });
+		</script> -->
 
 
 

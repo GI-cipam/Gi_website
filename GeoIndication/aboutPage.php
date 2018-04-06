@@ -196,14 +196,14 @@ html {
        <ul class="flexy-menu thick orange">
          <li class="active"><a href="index.php">Home</a></li>
          <li><a href="list.php?name=">GI's</a></li>
-         <li><a href="feed.html">Feed</a></li>
-         <li><a href="aboutPage.html">About</a></li>
+         <li><a href="feed.php">Feed</a></li>
+         <li><a href="aboutPage.php">About</a></li>
        </ul>
        <div class="search-box">
          <div id="sb-search" class="sb-search">
-           <form>
-             <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-             <input class="sb-search-submit" type="submit" value="">
+           <form action="list.php" method="get">
+             <input class="sb-search-input gi-name" placeholder="GI/State/Category..." type="search" name="name" id="search">
+             <input class="sb-search-submit search-name" type="submit" value="">
              <span class="sb-icon-search"> </span>
            </form>
          </div>
@@ -364,6 +364,17 @@ function carousel() {
     setTimeout(carousel, 3000);
 }
 </script>
+<!-- <script>
+var initVal = "GI/State/Category..."
+$(".search-name").attr("disabled", "false");
+$(".gi-name").blur(function(){
+    if ($(this).val() != initVal && $(this).val() != "") {
+        $(".search-name").removeAttr("disabled");
+    } else {
+        $(".search-name").attr("disabled", "true");
+    }
+});
+</script> -->
 
 </body>
 </html>
